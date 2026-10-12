@@ -29,3 +29,7 @@ calculate();
 const number = 42; //Allocated in the memory heap
 const string = 'Hello, world!'; //Allocated in the memory heap
 const human = { name: 'Alice', age: 30 }; //Allocated in the memory heap
+
+//memory heap points to the allocated objects in memory
+//Call stacks point to the currently executing functions in the stack
+//Whatever is on top of the call stack is the currently executing function
