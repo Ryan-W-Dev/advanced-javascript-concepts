@@ -37,3 +37,5 @@ jsengine('var a = 5');
 
 //Is javascript an interpreted language or a compiled language?
 //JavaScript is traditionally considered an interpreted language because it is executed by the JavaScript engine at runtime. However, modern JavaScript engines like V8 use Just-In-Time (JIT) compilation to improve performance, which means JavaScript can also be compiled to machine code at runtime.
+
+//This is alkso true when it comes to something like Python, which is traditionally interpreted but can also be compiled to bytecode for execution by the Python virtual machine.
