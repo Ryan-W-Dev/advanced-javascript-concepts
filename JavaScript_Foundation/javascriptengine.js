@@ -28,3 +28,12 @@ jsengine('var a = 5');
 // A Just-In-Time (JIT) compiler is a part of the JavaScript engine that improves performance by compiling code into machine code at runtime, rather than interpreting it line by line.
 // This allows frequently executed code to run much faster compared to traditional interpretation.
 // Example: V8 uses a JIT compiler to optimize JavaScript execution in Chrome and Node.js.
+
+//.exe are most of the time used for executable files on Windows systems. Written in machine code, these files can be executed directly by the operating system without the need for an interpreter. Normally writtien in C or C++.
+
+//JVM (Java Virtual Machine) is an abstract computing machine that enables a computer to run Java programs as well as programs written in other languages that are compiled to Java bytecode. It interprets the bytecode and executes it on the host machine, providing platform independence.
+
+//bytecode is an intermediate representation of code that is executed by a virtual machine, such as the JVM. It is platform-independent and allows programs to run on any system with the appropriate virtual machine. Or a javascript engine like V8 can execute bytecode after compiling JavaScript source code into it. You cannot run it directly on the hardware without the virtual machine or engine.
+
+//Is javascript an interpreted language or a compiled language?
+//JavaScript is traditionally considered an interpreted language because it is executed by the JavaScript engine at runtime. However, modern JavaScript engines like V8 use Just-In-Time (JIT) compilation to improve performance, which means JavaScript can also be compiled to machine code at runtime.
