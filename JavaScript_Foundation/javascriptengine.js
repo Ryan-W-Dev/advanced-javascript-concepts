@@ -78,3 +78,5 @@ Animal.prototype.move = function (dx, dy) {
 
 delete a1.x; // This will remove the x property from the a1 instance, potentially affecting the hidden class optimization.
 delete a2.y; // Similarly, removing the y property from the a2 instance can also impact the hidden class optimization.
+
+//Predictable optimization occurs when the structure of objects remains consistent, allowing the JavaScript engine to efficiently use hidden classes and inline caching.
