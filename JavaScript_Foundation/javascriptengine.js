@@ -24,3 +24,7 @@ jsengine('var a = 5');
 //BAbel is a JavaScript compiler that allows you to use next-generation JavaScript features by transforming them into a version compatible with current browsers.
 //Typescript is a superset of JavaScript that adds static types, enabling better tooling and error checking during development.
 //Both of these do exactly what compilers do: they transform code from one form to another to ensure compatibility and enhance development experience.
+// Jit compiler
+// A Just-In-Time (JIT) compiler is a part of the JavaScript engine that improves performance by compiling code into machine code at runtime, rather than interpreting it line by line.
+// This allows frequently executed code to run much faster compared to traditional interpretation.
+// Example: V8 uses a JIT compiler to optimize JavaScript execution in Chrome and Node.js.
