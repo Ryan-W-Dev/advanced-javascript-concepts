@@ -14,3 +14,9 @@ greet(); // "Hello!" - works because function declarations are hoisted
 //Invocation/Call/Execution example
 sayHello(); // "Hello!" - invoking the function expression
 greet(); // "Hello!" - invoking the function declaration
+
+//Function with parameters example
+function marry(person1, person2) {
+  console.log(person1 + ' is marrying ' + person2 + '!');
+}
+marry('Alice', 'Bob'); // "Alice is marrying Bob!" - invoking the marry function
