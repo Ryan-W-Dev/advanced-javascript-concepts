@@ -29,3 +29,15 @@ var sayBye = function () {
   console.log('Bye!');
 };
 sayBye(); // "Bye!" - works after assignment
+
+//function expression example
+var greet = function () {
+  console.log('Hello!');
+};
+greet(); // "Hello!" - works after assignment
+
+//function declaration example
+function welcome() {
+  console.log('Welcome!');
+}
+welcome(); // "Welcome!" - works because function declarations are hoisted
