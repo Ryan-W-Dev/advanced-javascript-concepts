@@ -41,3 +41,33 @@ function welcome() {
   console.log('Welcome!');
 }
 welcome(); // "Welcome!" - works because function declarations are hoisted
+
+//Exercise
+var one = 1;
+var two = 2;
+console.log(one); // 1
+console.log(two); // 2
+
+// What the engine actually sees:
+// var one;           <- hoisted declaration
+// var two;           <- hoisted declaration
+// console.log(one);  <- undefined
+// console.log(two);  <- undefined
+// one = 1;           <- assignment stays in place
+// two = 2;           <- assignment stays in place
+
+//Exercise two
+var favouriteFood = 'Pizza';
+
+var foodThoughts = 'I love ' + favouriteFood + '!';
+
+var favouriteFood = 'Sushi';
+console.log(foodThoughts); // "I love Pizza!" - works because the assignment to favouriteFood happens after foodThoughts is created
+
+// What the engine actually sees:
+// var favouriteFood;       <- hoisted declaration
+// var foodThoughts;        <- hoisted declaration
+// favouriteFood = 'Pizza'; <- assignment stays in place
+// foodThoughts = 'I love ' + favouriteFood + '!'; <- assignment stays in place
+// favouriteFood = 'Sushi'; <- assignment stays in place
+// console.log(foodThoughts); <- "I love Pizza!"
