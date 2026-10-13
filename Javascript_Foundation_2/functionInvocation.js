@@ -9,3 +9,8 @@ function greet() {
   console.log('Hello!');
 }
 greet(); // "Hello!" - works because function declarations are hoisted
+
+//Function
+//Invocation/Call/Execution example
+sayHello(); // "Hello!" - invoking the function expression
+greet(); // "Hello!" - invoking the function declaration
