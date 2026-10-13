@@ -67,3 +67,9 @@ const obj2 = { name: 'Jacob', importantPerson: importantPerson };
 
 obj1.importantPerson(); // Cassy!
 obj2.importantPerson(); // Jacob!
+
+//call() apply() bind() examples - Interview question: How to control `this` context in JavaScript?
+console.log(importantPerson.call(obj1)); // Cassy!
+console.log(importantPerson.apply(obj2)); // Jacob!
+const boundImportantPerson = importantPerson.bind(obj1);
+console.log(boundImportantPerson()); // Cassy!
