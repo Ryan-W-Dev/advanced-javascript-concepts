@@ -6,7 +6,7 @@ null // null value
 Symbol('description') // symbol
 {} // object
 [] // array
-function(){} // regular function
+(function(){}) // regular function
 (()=>{}) // arrow function
 
 typeof 5 // "number"
