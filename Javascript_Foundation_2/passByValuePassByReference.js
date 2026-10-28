@@ -29,3 +29,9 @@ let obj = { a: 'a', b: 'b', c: 'c' };
 let clone = Object.assign({}, obj);
 
 obj.c = 5;
+
+//structuredClone() Example
+let deepClone = structuredClone(obj);
+obj.a = 'z';
+console.log(deepClone.a); // 'a'
+console.log(obj.a); // 'z'
