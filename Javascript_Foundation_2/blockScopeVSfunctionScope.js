@@ -51,3 +51,50 @@ function loop() {
   // console.log(i); // ReferenceError: i is not defined
 }
 loop();
+
+// ==========================
+// Global Scope Example
+// ==========================
+// Variables declared without `var`, `let`, or `const` are GLOBAL scoped:
+// they are accessible anywhere in the code.
+
+function globalScopeExample() {
+  globalVar = 'I am global scoped';
+  console.log(globalVar); // works
+}
+globalScopeExample();
+console.log(globalVar); // works
+// ==========================
+// Local Scope Example
+// ==========================
+// Variables declared with `let` and `const` are LOCAL scoped:
+// they only exist inside the nearest pair of curly braces { }.
+
+function localScopeExample() {
+  let localLet = 'I am local scoped';
+  const localConst = 'Me too!';
+  console.log(localLet); // works
+  console.log(localConst); // works
+}
+localScopeExample();
+console.log(localLet); // ReferenceError: localLet is not defined
+console.log(localConst); // ReferenceError: localConst is not defined
+// ==========================
+// Block Scope Example
+// ==========================
+// Variables declared with `let` and `const` are BLOCK scoped:
+// they only exist inside the nearest pair of curly braces { }.
+
+function blockScopeExample() {
+  let outerLet = 'I live in the function block';
+  if (true) {
+    let blockLet = 'I am block scoped';
+    const blockConst = 'Me too!';
+    console.log(outerLet); // works -> inner blocks can see outer variables
+    console.log(blockLet); // works
+    console.log(blockConst); // works
+  }
+  console.log(outerLet); // works
+  // console.log(blockLet);   // ReferenceError: blockLet is not defined
+  // console.log(blockConst); // ReferenceError: blockConst is not defined
+}
