@@ -77,24 +77,5 @@ function localScopeExample() {
   console.log(localConst); // works
 }
 localScopeExample();
-console.log(localLet); // ReferenceError: localLet is not defined
-console.log(localConst); // ReferenceError: localConst is not defined
-// ==========================
-// Block Scope Example
-// ==========================
-// Variables declared with `let` and `const` are BLOCK scoped:
-// they only exist inside the nearest pair of curly braces { }.
-
-function blockScopeExample() {
-  let outerLet = 'I live in the function block';
-  if (true) {
-    let blockLet = 'I am block scoped';
-    const blockConst = 'Me too!';
-    console.log(outerLet); // works -> inner blocks can see outer variables
-    console.log(blockLet); // works
-    console.log(blockConst); // works
-  }
-  console.log(outerLet); // works
-  // console.log(blockLet);   // ReferenceError: blockLet is not defined
-  // console.log(blockConst); // ReferenceError: blockConst is not defined
-}
+// console.log(localLet); // ReferenceError: localLet is not defined
+// console.log(localConst); // ReferenceError: localConst is not defined
