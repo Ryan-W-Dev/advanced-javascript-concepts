@@ -35,3 +35,15 @@ let deepClone = structuredClone(obj);
 obj.a = 'z';
 console.log(deepClone.a); // 'a'
 console.log(obj.a); // 'z'
+
+// Spread Operator Example
+let spreadClone = { ...obj };
+obj.a = 'z';
+console.log(spreadClone.a); // 'a'
+console.log(obj.a); // 'z'
+
+// JSON.parse(JSON.stringify()) Example
+let jsonClone = JSON.parse(JSON.stringify(obj));
+obj.a = 'z';
+console.log(jsonClone.a); // 'a'
+console.log(obj.a); // 'z'
