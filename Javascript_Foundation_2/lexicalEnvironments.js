@@ -36,19 +36,3 @@ function outer() {
 
 const myInnerFunction = outer();
 myInnerFunction(); // 'I am outside!' — inner still remembers its lexical environment
-
-// Another example: lexical scoping with closures
-function outer() {
-  const outerVariable = 'I am outside!';
-
-  function inner() {
-    // 'inner' has access to outerVariable because it was
-    // lexically written inside 'outer'
-    console.log(outerVariable);
-  }
-
-  return inner;
-}
-
-const myInnerFunction = outer();
-myInnerFunction(); // 'I am outside!' — inner still remembers its lexical environment
